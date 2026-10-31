@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/publish_root"
+ android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/screen_padding">
+  <Button android:id="@+id/publish_back" style="@style/MarketQuietButton" android:text="@string/back" />
+  <TextView android:id="@+id/publish_heading" style="@style/MarketPageTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/publish_title" android:layout_marginTop="@dimen/space_12" />
+  <TextView android:id="@+id/publish_status" style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:accessibilityLiveRegion="polite" />
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="@dimen/space_24" android:padding="@dimen/space_16" android:background="@drawable/card_background">
+   <TextView style="@style/MarketSectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/product_basic_section" />
+   <TextView style="@style/MarketCaption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:labelFor="@id/publish_title" android:text="@string/product_title_hint" />
+   <EditText android:id="@+id/publish_title" style="@style/InputField" android:inputType="textCapSentences" android:maxLength="100" android:autofillHints="" />
+   <TextView style="@style/MarketCaption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:labelFor="@id/publish_price" android:text="@string/product_price_hint" />
+   <EditText android:id="@+id/publish_price" style="@style/InputField" android:inputType="numberDecimal" android:maxLength="11" android:autofillHints="" />
+   <TextView style="@style/MarketCaption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:labelFor="@id/publish_category" android:text="@string/product_category_hint" />
+   <Spinner android:id="@+id/publish_category" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="@dimen/space_8" android:contentDescription="@string/product_category_hint" android:background="@drawable/input_background" android:paddingHorizontal="12dp" />
+   <TextView style="@style/MarketCaption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:labelFor="@id/publish_condition" android:text="@string/product_condition_hint" />
+   <EditText android:id="@+id/publish_condition" style="@style/InputField" android:inputType="text" android:maxLength="30" android:autofillHints="" />
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="@dimen/space_16" android:padding="@dimen/space_16" android:background="@drawable/card_background">
+   <TextView style="@style/MarketSectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/product_trade_section" />
+   <TextView style="@style/MarketCaption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:labelFor="@id/publish_location" android:text="@string/product_location_hint" />
+   <EditText android:id="@+id/publish_location" style="@style/InputField" android:inputType="text" android:maxLength="120" android:autofillHints="" />
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="@dimen/space_16" android:padding="@dimen/space_16" android:background="@drawable/card_background">
+   <TextView style="@style/MarketSectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/product_description_section" />
+   <TextView style="@style/MarketCaption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:labelFor="@id/publish_description" android:text="@string/product_description_hint" />
+   <EditText android:id="@+id/publish_description" style="@style/InputField" android:inputType="textMultiLine" android:singleLine="false" android:minLines="5" android:gravity="top|start" android:maxLength="2000" android:autofillHints="" />
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="@dimen/space_16" android:padding="@dimen/space_16" android:background="@drawable/card_background">
+   <TextView style="@style/MarketSectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/product_images_section" />
+   <TextView style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/product_images_hint" android:layout_marginTop="@dimen/space_8" />
+   <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:scrollbars="none"><LinearLayout android:id="@+id/publish_images" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" /></HorizontalScrollView>
+   <Button android:id="@+id/publish_pick" style="@style/SecondaryButton" android:text="@string/product_pick" />
+  </LinearLayout>
+  <Button android:id="@+id/publish_save" style="@style/ActionButton" android:text="@string/product_save" />
+  <Button android:id="@+id/publish_retry" style="@style/SecondaryButton" android:text="@string/catalog_retry" android:visibility="gone" />
+ </LinearLayout>
+</ScrollView>

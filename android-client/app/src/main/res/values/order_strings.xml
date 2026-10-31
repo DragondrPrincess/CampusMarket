@@ -1,0 +1,20 @@
+<resources>
+ <string name="orders_buyer">我的买入订单</string><string name="orders_seller">我的卖出订单</string>
+ <string name="order_title">订单详情</string><string name="order_buy">立即下单</string>
+ <string name="order_buy_confirm">确认下单此商品？商品将为本订单保留，等待卖家确认。付款仅为课程演示，不涉及真实资金。</string>
+ <string name="order_confirm">卖家确认接单</string><string name="order_pay">模拟支付</string><string name="order_deliver">确认已线下交付</string><string name="order_receive">确认已收到商品</string><string name="order_cancel">取消订单</string>
+ <string name="order_pending_confirmation">待卖家确认</string><string name="order_pending_payment">待模拟支付</string><string name="order_paid">待线下交付</string><string name="order_delivered">待买家收货</string><string name="order_completed">已完成</string><string name="order_cancelled">已取消</string><string name="order_unknown">状态待刷新</string>
+ <string name="order_unpaid">未模拟支付</string><string name="order_payment_ok">已模拟支付</string><string name="order_refunded">已模拟退款</string>
+ <string name="order_disclaimer">课程演示交易：不接入真实支付，不发生资金转移。请在线下当面确认商品和交接。</string>
+ <string name="order_action_confirm">确认执行“%1$s”？</string><string name="order_pay_confirm">将模拟支付 ¥%1$s。此操作仅记录演示状态，不扣款、不转账。</string>
+ <string name="order_cancel_confirm">交付前可取消订单；已模拟支付的订单会同时记录模拟退款，并恢复商品可售。</string>
+ <string name="order_deliver_confirm">请仅在已将商品当面交给买家后确认。交付后不再支持取消订单。</string>
+ <string name="order_receive_confirm">请确认已实际收到并检查商品。确认后交易完成，商品标记为已售。</string>
+ <string name="order_number">CM%1$d</string><string name="order_list_details">%1$s · %2$s\n更新于 %3$s</string>
+ <string name="order_amount">¥%1$s</string><string name="order_summary">付款状态：%1$s\n买家：%2$s\n卖家：%3$s\n交接地点：%4$s\n成色：%5$s\n下单时间：%6$s\n更新时间：%7$s</string>
+ <string name="order_snapshot">商品描述（下单快照）</string>
+ <string name="order_history">状态记录</string><string name="order_created">已创建订单</string>
+ <string name="order_retry_hint">网络请求未能确认结果，请刷新后再操作；创建订单重试会沿用原请求编号。也可在“我的买入订单”查看。</string>
+ <string name="product_reserved">交易中</string><string name="product_sold">已售出</string>
+ <string name="order_manage_reserved">交易中或已售商品不能编辑、上下架或删除，请前往卖出订单处理交易。</string>
+</resources>

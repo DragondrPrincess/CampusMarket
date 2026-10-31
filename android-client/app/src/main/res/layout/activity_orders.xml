@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/orders_root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="@dimen/screen_padding">
+ <Button android:id="@+id/orders_back" style="@style/MarketQuietButton" android:text="@string/back" />
+ <TextView android:id="@+id/orders_heading" style="@style/MarketPageTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" />
+ <TextView style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_disclaimer" android:layout_marginTop="@dimen/space_12" android:padding="@dimen/space_12" android:background="@drawable/card_background" />
+ <TextView android:id="@+id/orders_status" style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:accessibilityLiveRegion="polite" />
+ <Button android:id="@+id/orders_refresh" style="@style/SecondaryButton" android:text="@string/refresh_profile" />
+ <androidx.recyclerview.widget.RecyclerView android:id="@+id/orders_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="@dimen/space_12" android:clipToPadding="false" android:paddingBottom="@dimen/space_8" />
+ <Button android:id="@+id/orders_more" style="@style/SecondaryButton" android:text="@string/catalog_more" android:visibility="gone" />
+</LinearLayout>

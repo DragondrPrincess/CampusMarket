@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/catalog_panel" />
+    <ScrollView android:id="@+id/secondary_scroll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/screen_padding" android:orientation="vertical">
+            <TextView style="@style/MarketPageTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+            <TextView style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8" android:text="@string/tagline" />
+            <LinearLayout android:id="@+id/home_panel" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_32" android:padding="@dimen/space_16" android:background="@drawable/card_background" android:orientation="vertical">
+                <TextView style="@style/MarketSectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/connection_title" />
+                <TextView style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12" android:text="@string/connection_intro" />
+                <TextView android:id="@+id/connection_status" style="@style/MarketBody" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_24" android:text="@string/ready" android:accessibilityLiveRegion="polite" />
+                <TextView android:id="@+id/database_details" style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12" android:lineSpacingExtra="6dp" android:textIsSelectable="true" />
+                <Button android:id="@+id/check_connection" style="@style/ActionButton" android:text="@string/connect" />
+                <Button android:id="@+id/back_catalog" style="@style/SecondaryButton" android:text="@string/catalog_back" />
+            </LinearLayout>
+            <include layout="@layout/profile_panel" />
+            <TextView android:id="@+id/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="40dp" android:padding="24dp" android:gravity="center" android:textSize="20sp"
+                android:textColor="@color/market_muted" android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+    <RadioGroup android:id="@+id/navigation" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingHorizontal="12dp" android:paddingVertical="6dp" android:background="@color/market_surface" android:checkedButton="@id/nav_home">
+        <RadioButton android:id="@+id/nav_home" style="@style/MarketNavigation" android:text="@string/home" android:drawableTop="@drawable/ic_market_home" />
+        <RadioButton android:id="@+id/nav_publish" style="@style/MarketNavigation" android:text="@string/publish" android:drawableTop="@drawable/ic_market_publish" />
+        <RadioButton android:id="@+id/nav_messages" style="@style/MarketNavigation" android:text="@string/messages" android:drawableTop="@drawable/ic_market_messages" />
+        <RadioButton android:id="@+id/nav_profile" style="@style/MarketNavigation" android:text="@string/profile" android:drawableTop="@drawable/ic_market_profile" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+ <string name="contact_seller">联系卖家</string><string name="conversation_title">站内消息</string><string name="chat_title">商品咨询</string>
+ <string name="message_hint">输入文字消息（最多1000字）</string><string name="message_send">发送</string><string name="message_retry_send">重试发送</string>
+ <string name="messages_empty">暂无会话，从商品详情联系卖家吧</string><string name="chat_empty">还没有消息，发送文字开始沟通</string>
+ <string name="conversation_unread">未读 %1$d 条</string><string name="conversation_read">暂无未读</string><string name="conversation_no_message">尚未发送消息</string>
+ <string name="conversation_product">关于：%1$s</string>
+ <string name="chat_header">%1$s\n关于：%2$s</string><string name="message_time">%1$s · %2$s</string><string name="message_me">我</string><string name="message_peer">对方</string>
+ <string name="message_invalid">请输入1至1000字的有效文字</string><string name="message_sending">正在发送…</string>
+ <string name="message_send_failed">发送结果尚未确认。请点“重试发送”；重试会沿用原消息，不会重复保存。</string>
+ <string name="message_loaded">已加载 %1$d 条消息</string><string name="chat_refresh">刷新 / 查看最新</string><string name="chat_older">加载更早消息</string>
+ <string name="chat_read_failed">已读状态同步失败，下次刷新将重试</string><string name="messages_badge">消息 · %1$d</string>
+ <string name="chat_product_note">商品状态：%1$s。此会话会保留历史记录。</string>
+</resources>

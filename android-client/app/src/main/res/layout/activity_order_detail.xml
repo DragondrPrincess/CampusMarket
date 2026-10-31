@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/order_root" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/screen_padding">
+  <Button android:id="@+id/order_back" style="@style/MarketQuietButton" android:text="@string/back" />
+  <TextView style="@style/MarketPageTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_title" android:layout_marginTop="@dimen/space_12" />
+  <TextView style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_disclaimer" android:layout_marginTop="@dimen/space_12" android:padding="@dimen/space_12" android:background="@drawable/card_background" />
+  <TextView android:id="@+id/order_status" style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:accessibilityLiveRegion="polite" />
+  <Button android:id="@+id/order_refresh" style="@style/SecondaryButton" android:text="@string/refresh_profile" />
+  <LinearLayout android:id="@+id/order_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+   <TextView android:id="@+id/order_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:paddingHorizontal="@dimen/space_12" android:paddingVertical="@dimen/space_8" android:background="@drawable/status_accent_background" android:textColor="@color/market_accent_ink" android:textSize="14sp" android:fontFamily="sans-serif-medium" />
+   <TextView android:id="@+id/order_product_title" style="@style/MarketSectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" />
+   <TextView android:id="@+id/order_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:textSize="28sp" android:fontFamily="sans-serif-medium" android:textColor="@color/market_ink" />
+   <TextView android:id="@+id/order_details" style="@style/MarketBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:padding="@dimen/space_16" android:background="@drawable/card_background" android:lineSpacingExtra="8dp" android:textIsSelectable="true" />
+   <TextView style="@style/MarketSectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_snapshot" android:layout_marginTop="@dimen/space_24" />
+   <TextView android:id="@+id/order_description" style="@style/MarketBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:padding="@dimen/space_16" android:background="@drawable/card_background" android:lineSpacingExtra="6dp" android:textIsSelectable="true" />
+   <LinearLayout android:id="@+id/order_actions" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="@dimen/space_8" />
+   <TextView style="@style/MarketSectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_history" android:layout_marginTop="@dimen/space_24" />
+   <TextView android:id="@+id/order_events" style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8dp" android:layout_marginTop="@dimen/space_12" android:padding="@dimen/space_16" android:background="@drawable/card_background" />
+  </LinearLayout>
+ </LinearLayout>
+</ScrollView>

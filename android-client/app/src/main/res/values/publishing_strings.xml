@@ -1,0 +1,19 @@
+<resources>
+ <string name="publish_title">发布闲置</string><string name="publish_edit">编辑商品</string>
+ <string name="product_basic_section">基本信息</string><string name="product_trade_section">交易信息</string><string name="product_description_section">商品描述</string><string name="product_images_section">商品图片</string>
+ <string name="field_required">此项为必填</string><string name="price_invalid">请输入最多两位小数的有效价格</string>
+ <string name="my_products">我的发布</string><string name="my_favorites">我的收藏</string>
+ <string name="product_title_hint">商品标题（必填）</string><string name="product_price_hint">价格（元，最多两位小数）</string>
+ <string name="product_category_hint">商品分类</string><string name="product_condition_hint">成色，例如：九成新（必填）</string>
+ <string name="product_location_hint">校园交接地点（必填）</string><string name="product_description_hint">描述使用情况、配件等（必填）</string>
+ <string name="product_images_hint">图片可选，最多5张；JPEG/PNG，每张不超过5MB。点击图片可移除。</string>
+ <string name="product_pick">选择并上传图片</string><string name="product_save">保存商品</string>
+ <string name="product_busy">正在处理，请稍候…</string><string name="product_ready">填写真实商品信息，与同学约定线下交接。</string>
+ <string name="product_photo">商品图片 %1$d，点击移除</string><string name="product_image_limit">最多5张图片</string><string name="product_image_invalid">请选择不超过5MB的JPEG或PNG图片</string>
+ <string name="product_required">请填写完整信息，价格最多两位小数</string>
+ <string name="product_manage_hint">%1$s · %2$s\n点击管理商品</string><string name="product_on_sale">在售</string><string name="product_off_shelf">已下架</string>
+ <string name="product_manage">管理商品</string><string name="product_take_down">下架</string><string name="product_relist">重新上架</string><string name="product_delete">删除</string>
+ <string name="product_delete_confirm">删除后商品将不再展示，无法继续编辑。确定删除？</string><string name="product_cancel">取消</string>
+ <string name="product_favorite">收藏商品</string><string name="product_unfavorite">取消收藏</string><string name="product_sign_in">请先登录后继续</string>
+ <string name="product_public_photo">商品实物照片</string>
+</resources>

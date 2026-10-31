@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_panel" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_32" android:padding="@dimen/space_16" android:orientation="vertical"
+    android:background="@drawable/card_background" android:visibility="gone">
+    <TextView style="@style/MarketPageTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/profile_title" />
+    <TextView android:id="@+id/account_status" style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16" android:text="@string/sign_in_prompt" android:accessibilityLiveRegion="polite" />
+    <TextView android:id="@+id/profile_details" style="@style/MarketBody" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16" android:lineSpacingExtra="8dp" />
+    <Button android:id="@+id/account_login" style="@style/ActionButton" android:text="@string/sign_in_or_register" />
+    <Button android:id="@+id/edit_profile" style="@style/ActionButton" android:text="@string/edit_profile" android:visibility="gone" />
+    <Button android:id="@+id/my_products" style="@style/SecondaryButton" android:text="@string/my_products" android:visibility="gone" />
+    <Button android:id="@+id/my_favorites" style="@style/SecondaryButton" android:text="@string/my_favorites" android:visibility="gone" />
+    <Button android:id="@+id/buyer_orders" style="@style/SecondaryButton" android:text="@string/orders_buyer" android:visibility="gone" />
+    <Button android:id="@+id/seller_orders" style="@style/SecondaryButton" android:text="@string/orders_seller" android:visibility="gone" />
+    <Button android:id="@+id/refresh_profile" style="@style/SecondaryButton" android:text="@string/refresh_profile" android:visibility="gone" />
+    <Button android:id="@+id/logout" style="@style/SecondaryButton" android:text="@string/logout" android:visibility="gone" />
+</LinearLayout>

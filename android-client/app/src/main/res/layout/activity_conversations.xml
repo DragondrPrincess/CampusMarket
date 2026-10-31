@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/conversations_root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="@dimen/screen_padding">
+ <Button android:id="@+id/conversations_back" style="@style/MarketQuietButton" android:text="@string/back" />
+ <TextView style="@style/MarketPageTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/conversation_title" android:layout_marginTop="@dimen/space_12" />
+ <TextView android:id="@+id/conversations_status" style="@style/MarketMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:accessibilityLiveRegion="polite" android:layout_marginTop="@dimen/space_8" />
+ <Button android:id="@+id/conversations_refresh" style="@style/SecondaryButton" android:text="@string/catalog_retry" />
+ <androidx.recyclerview.widget.RecyclerView android:id="@+id/conversations_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="@dimen/space_12" android:clipToPadding="false" android:paddingBottom="@dimen/space_8" />
+ <Button android:id="@+id/conversations_more" style="@style/SecondaryButton" android:text="@string/catalog_more" android:visibility="gone" />
+</LinearLayout>

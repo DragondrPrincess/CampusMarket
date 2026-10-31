@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_16" android:background="@drawable/card_background"
+    android:foreground="?android:attr/selectableItemBackground" android:orientation="vertical"
+    android:focusable="true" android:clickable="true">
+  <com.campusmarket.AspectRatioFrameLayout android:id="@+id/product_media"
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:background="@drawable/thumbnail_background">
+    <TextView android:id="@+id/product_badge" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center" android:padding="@dimen/space_16" android:textSize="14sp"
+        android:textColor="@color/market_accent_ink" android:background="@color/market_accent_soft" />
+    <ImageView android:id="@+id/product_photo" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scaleType="centerCrop" android:contentDescription="@string/product_public_photo" android:visibility="gone" />
+  </com.campusmarket.AspectRatioFrameLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:padding="@dimen/space_16" android:orientation="vertical">
+    <TextView android:id="@+id/product_title" style="@style/MarketCardTitle"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:ellipsize="end" />
+    <TextView android:id="@+id/product_meta" style="@style/MarketMeta"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8" android:maxLines="2" android:ellipsize="end" />
+    <TextView android:id="@+id/product_price" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_12" android:textSize="20sp"
+        android:fontFamily="sans-serif-medium" android:textColor="@color/market_ink" />
+  </LinearLayout>
+</LinearLayout>

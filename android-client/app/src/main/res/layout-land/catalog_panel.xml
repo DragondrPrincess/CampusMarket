@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/catalog_panel" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:paddingHorizontal="@dimen/screen_padding" android:paddingTop="@dimen/space_8">
+  <ScrollView android:layout_width="280dp" android:layout_height="match_parent" android:layout_marginEnd="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/MarketPageTitle" android:accessibilityHeading="true" tools:targetApi="28" />
+        <Button android:id="@+id/open_diagnostics" style="@style/MarketQuietButton" android:text="@string/catalog_connection" />
+      </LinearLayout>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="14dp" android:text="@string/tagline" android:textColor="@color/market_muted" android:textSize="13sp" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:background="@drawable/search_background" android:paddingStart="12dp" android:paddingEnd="4dp">
+        <EditText android:id="@+id/product_keyword" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="52dp" android:paddingVertical="12dp" android:paddingStart="0dp" android:paddingEnd="8dp" android:background="@null" android:textSize="16sp" android:textColor="@color/market_ink" android:textColorHint="@color/market_muted" android:hint="@string/catalog_search_hint" android:inputType="text" android:singleLine="true" android:maxLength="100" android:imeOptions="actionSearch" android:importantForAutofill="no" android:drawableStart="@drawable/ic_market_search" android:drawablePadding="8dp" />
+        <Button android:id="@+id/product_search" style="@style/MarketSearchButton" android:text="@string/catalog_search" />
+      </LinearLayout>
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/catalog_input_help" android:textSize="12sp" android:textColor="@color/market_muted" />
+        <Button android:id="@+id/product_paste" style="@style/MarketQuietButton" android:text="@string/catalog_paste" />
+      </LinearLayout>
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginEnd="8dp">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:labelFor="@id/product_category" android:text="@string/catalog_category" android:textSize="12sp" android:textColor="@color/market_muted" />
+          <Spinner android:id="@+id/product_category" android:layout_width="match_parent" android:layout_height="48dp" android:spinnerMode="dropdown" android:contentDescription="@string/catalog_category" android:background="@drawable/input_background" android:paddingHorizontal="8dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:labelFor="@id/product_sort" android:text="@string/catalog_sort" android:textSize="12sp" android:textColor="@color/market_muted" />
+          <Spinner android:id="@+id/product_sort" android:layout_width="match_parent" android:layout_height="48dp" android:spinnerMode="dropdown" android:contentDescription="@string/catalog_sort" android:background="@drawable/input_background" android:paddingHorizontal="8dp" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:layout_marginStart="296dp">
+    <TextView android:id="@+id/catalog_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/market_muted" android:textSize="12sp" android:paddingVertical="8dp" android:accessibilityLiveRegion="polite" />
+    <Button android:id="@+id/catalog_retry" style="@style/MarketMoreButton" android:text="@string/catalog_retry" android:visibility="gone" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/product_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:paddingBottom="4dp" android:clipToPadding="false" />
+    <Button android:id="@+id/catalog_more" style="@style/MarketMoreButton" android:text="@string/catalog_more" android:visibility="gone" />
+  </LinearLayout>
+</FrameLayout>
